@@ -11,7 +11,12 @@
 
 #define CMD_RC 105
 
-SoftwareSerial auxSerial(10, 11); // RX TX
+
+#define AUX_SERIAL_RX 10
+#define AUX_SERIAL_TX 11
+
+
+SoftwareSerial auxSerial(AUX_SERIAL_RX, AUX_SERIAL_TX); // RX TX
 
 void setup()
 {
